@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>formlar html</title>
+	</head>
+	<body>
+		<form method="post">
+			<p>Ad:<input type="text" name="ad" placeholder="Adınızı giriniz" /></p>
+			<p>Soyad:<input type="text" name="soyad" placeholder="Soyadınızı giriniz" /></p>
+			<p>Yaş:<input type="number" name="yas" placeholder="Yaşınızı giriniz" /></p>
+			<p>E-posta:<input type="email" name="eposta" placeholder="E-posta adresinizi giriniz" /></p>
+			<p>Şifre:<input type="password" name="sifre" placeholder="Şifrenizi giriniz" /></p>
+			<p>
+				şifre hatırla
+				<input name="password" type="checkbox" />
+			</p>
+			<p>Adres:<textarea name="adres" cols="30" rows="10" placeholder="Adresinizi giriniz"></textarea></p>
+			<p>
+				Cinsiyet:<input type="radio" name="cinsiyet" value="erkek" />Erkek
+				<input type="radio" name="cinsiyet" value="kadin" />Kadın
+			</p>
+			<p>
+				İlgi alanları:<input type="checkbox" name="ilgi[]" value="spor" />Spor
+				<input type="checkbox" name="ilgi[]" value="sinema" />Sinema
+				<input type="checkbox" name="ilgi[]" value="kitap" />Kitap
+			</p>
+			<p>
+				Sevdiğiniz renk:<select name="renk">
+					<option value="kirmizi">Kırmızı</option>
+					<option value="mavi">Mavi</option>
+					<option value="yesil">Yeşil</option>
+				</select>
+			</p>
+			<p>
+				Sevdiğiniz meyve:<select name="meyve[]" multiple>
+					<option value="elma">Elma</option>
+					<option value="armut">Armut</option>
+					<option value="muz">Muz</option>
+				</select>
+			</p>
+			<p>
+				Doğum yeri:<select name="dogumyeri">
+					<option value="istanbul">istanbul</option>
+					<option value="ankara">ankara</option>
+					<option value="izmir">izmir</option>
+				</select>
+			</p>
+			<input type="submit" name="gonder" value="Gönder" />
+		</form>
+	</body>
+</html>
