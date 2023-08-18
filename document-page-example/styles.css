@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	display: flex;
+	height: 100vh;
+	background: #f5f5f5;
+}
+main {
+	width: 85%;
+	padding: 10px;
+}
+nav {
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	font-size: 18px;
+}
+nav header {
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+}
+header {
+	font-size: 30px;
+}
+p {
+	letter-spacing: 1px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+}
+@media screen and (max-width: 960px) {
+	header {
+		font-style: italic;
+		font-weight: bold;
+		max-width: 100%;
+	}
+}
