@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<input type="number" id="input1" />
+		<input type="number" id="input2" />
+		<button id="btn" onclick="Topla()">Topla</button>
+		<div id="sonuc"></div>
+
+		<script>
+			var btn = document.getElementById('btn')
+			var sonuc = document.getElementById('sonuc')
+
+			function Topla() {
+				var input1 = document.getElementById('input1').value
+				var input2 = document.getElementById('input2').value
+				var toplam = parseInt(input1) + parseInt(input2)
+				sonuc.innerHTML = toplam
+			}
+		</script>
+	</body>
+</html>
